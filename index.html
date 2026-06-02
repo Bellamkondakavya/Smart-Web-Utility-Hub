@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interactive JavaScript Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+<header>
+    <h1>Smart Web Utility Hub</h1>
+    <p class="subtitle">
+    A modern web application showcasing dynamic UI interactions, smart greetings, a live digital clock, dynamic color controls, and real-time calculations powered by JavaScript.
+</p>
+</header>
+
+<section class="card">
+    <h2>🕒 Smart Greeting System</h2>
+    <h3 id="greeting"></h3>
+    <div id="clock"></div>
+</section>
+
+<section class="card">
+    <h2>🎨 Dynamic Color Button</h2>
+
+    <button id="colorBtn" onclick="changeColor()">
+        Change Color
+    </button>
+
+    <p>Current Color</p>
+    <span id="colorCode">#3B82F6</span>
+
+    <p>Total Clicks</p>
+    <span id="clickCount">0</span>
+</section>
+
+<section class="card">
+    <h2>🧮 Advanced Calculator</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <div class="btn-group">
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">−</button>
+        <button onclick="calculate('*')">×</button>
+        <button onclick="calculate('/')">÷</button>
+    </div>
+
+    <h3 id="result">Result: 0</h3>
+
+    <h4>History</h4>
+    <ul id="history"></ul>
+</section>
+
+<footer>
+    Created with HTML, CSS & JavaScript
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
